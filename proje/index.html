@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="main-nav container flex">
+            <h1 class="isim">FEYZA KAVAK</h1>
+
+
+            <div class="nav-links">
+                <ul class="flex">
+
+
+                    <li><a href="index.html" class="hover-link nav-item" id="business"
+                            onclick="onNavItemClick('business')">business</a></li>
+
+
+
+
+                    <li><a href="index.html" class="hover-link nav-item" id="entertainment"
+                            onclick="onNavItemClick('entertainment')">entertainment</a></li>
+
+
+
+                    <li><a href="index.html" class="hover-link nav-item" id="general"
+                            onclick="onNavItemClick('general')">general</a></li>
+
+
+
+                    <li><a href="index.html" class="hover-link nav-item" id="health"
+                            onclick="onNavItemClick('health')">health</a></li>
+
+
+
+                    <li><a href="index.html" class="hover-link nav-item" id="science"
+                            onclick="onNavItemClick('science')">science</a></li>
+
+
+
+                    <li><a href="index.html" class="hover-link nav-item" id="sports"
+                            onclick="onNavItemClick('sports')">sports</a></li>
+
+
+
+                    <li><a href="index.html" class="hover-link nav-item" id="technology"
+                            onclick="onNavItemClick('technology')">technology</a></li>
+
+
+
+                    <li><a href="about.html" class="hover-link nav-item" id="about"
+                            onclick="onNavItemClick('about')">about</a></li>
+
+
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input id="search-text" type="text" class="news-input" placeholder="e.g. Science">
+                <button id="search-button" class="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+
+        </div>
+    </main>
+
+    <template id="template-news-slider">
+        <div class="slider-container">
+            <img src="https://via.placeholder.com/600x300" class="slider-image" alt="Slider Image 1">
+            <img src="https://via.placeholder.com/600x300" class="slider-image" alt="Slider Image 2">
+            <img src="https://via.placeholder.com/600x300" class="slider-image" alt="Slider Image 3">
+        </div>
+    </template>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+                <p class="news-desc" id="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+                    saepe quis voluptatum quisquam vitae doloremque facilis molestias quae ratione cumque!</p>
+            </div>
+        </div>
+    </template>
+
+    <script src="index.js"></script>
+</body>
+
+</html> 
